@@ -1,8 +1,15 @@
 # Compiled class file
 *.class
 
+oopsyabbreviated
+steamerabbreviated
+
 # Log file
 *.log
+
+# CSV file
+*.csv
+*.properties
 
 # BlueJ files
 *.ctxt

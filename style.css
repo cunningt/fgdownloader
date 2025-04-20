@@ -1,0 +1,119 @@
+/* ===== Layout Wrapper ===== */
+.table-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ===== General Body Styling ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+    background-color: #f2f2f2;
+    color: #444;
+}
+
+/* ===== Title ===== */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+/* ===== DataTable Styling ===== */
+table.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 32px; /* vertical spacing from search */
+}
+
+table.dataTable thead {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+table.dataTable th,
+table.dataTable td {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+/* ===== Search Box Styling (Left-Aligned) ===== */
+.table-wrapper .dataTables_wrapper .top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 32px;
+    max-width: 100%;
+    padding-left: 18px; /* Align with table's cell padding */
+}
+
+.table-wrapper .dataTables_filter {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table-wrapper .dataTables_filter label {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.table-wrapper .dataTables_filter input {
+    padding: 8px 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 250px;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* ===== Pagination Buttons ===== */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: 1px solid #888;
+    background-color: #f4f4f4;
+    color: #444;
+    border-radius: 4px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #555;
+    color: white !important;
+    border-color: #555;
+}
+
+/* ===== Responsive Behavior ===== */
+@media (max-width: 600px) {
+    .table-wrapper .dataTables_wrapper .top {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .table-wrapper .dataTables_filter input {
+        width: 100%;
+    }
+.table-wrapper .dataTables_filter label::before {
+    content: '';
+}
